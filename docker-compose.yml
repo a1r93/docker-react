@@ -1,0 +1,14 @@
+version: "3"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    # Volumes is used for hot reload
+    volumes:
+      # the first line says don't map the node modules, use your own
+      - /app/node_modules
+      # The second line says watch all the files in the current directory (.) and paste a reference of them inside /app
+      - .:/app
