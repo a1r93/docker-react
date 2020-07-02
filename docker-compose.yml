@@ -12,3 +12,4 @@ services:
       - /app/node_modules
       # The second line says watch all the files in the current directory (.) and paste a reference of them inside /app
       - .:/app
+    command: ["npm", "run", "test"]
