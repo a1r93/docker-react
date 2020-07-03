@@ -14,7 +14,7 @@ deploy:
   env: "AroDockerTutorial-env"
   bucket_name: "elasticbeanstalk-eu-west-1-673546161053"
   bucket_path: "aro-docker-tutorial"
-  access_key_id: $access_key_id
+  access_key_id: "$access_key_id"
   secret_access_key:
     secure: "$secret_access_key"
   on:
